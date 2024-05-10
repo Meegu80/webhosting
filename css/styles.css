@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+h1 {
+    color: red;
+    font-family: vaerdana,sans-serif;
+    /* font지정(여러개 지정 가능) */
+    font-size: 300%;
+}
+p {
+    color: blue;
+    font-family: courier;
+    font-size: 200%;
+    border: 2px solid powderblue;
+}
+
+section {
+    width:500px;
+    padding:15px;
+    border:5px solid gray;
+
+}
+
+section > p{   /* 섹션 자식 중에서 p태그인 요소들만 적용하겠다*/
+    color:pink;
+}

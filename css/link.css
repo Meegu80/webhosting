@@ -1,0 +1,31 @@
+@charset
+
+body{
+    font-family: sans-serif,Arial;
+    background-color: #55adf5;
+    padding: 20px;
+    color:#333;
+}
+
+h2{
+    color: #e8eaec;
+    font-size:1.5em;
+}
+
+a{
+    color:0073e6;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: rgb(179, 44, 161);
+}
+
+a:link{
+    color:orange;
+}
