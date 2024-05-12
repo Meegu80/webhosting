@@ -1,96 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마이페이지</title>
-    <style>
-        * {
-            margin: 20px auto;
-        }
-        /* id 속성의 이름이 container인 요소 - div*/
-        #container{
-            width: 600px;   /* 넓이 */
-            padding: 15px; /* 내용(컨텐츠)와 테두리사이 공간 */
-            border: 1px dotted gray; /* container를 감싸는 테두리 설정 */
-        }
-        p{
-            font-size: 0.9em; /* 16px-1em 글자 크기 */
-            line-height: 2.0; /* 줄간격 */
-        }
-        /* 쩜은 클래스 선택자 - 장점은 class속성을 같은 이름으로 여러 요소에게 지정할 수 있음.*/
-        .bluetext{
-            color: blue;
-        }
-        /* 요소 중에서 class 속성의 값이 redtext인 요소에 빨간색을 적용하겠다. */
-        .redtext{
-            color: red;
-        }
-        /* 요소 중에서 class 속성의 값이 boldtext인 요소에 글자를 두껍게 하겠다. */
-        .boldtext{
-            font-weight: bold;
-        }
-        /* 요소 중에서 class 속성의 값이 center인 요소에 텍스트를 가운데 정렬하겠다. */
-        .center{
-            text-align: center;
-        }
-        /* h2 중에서 class 속성이 bgtext 요소의 배경색을 넣고, 중앙정렬 */
-        h2.bgtext{ /* h2 요소 중에서 bgtext 라는 클래스 속성을 갖고 있는 요소 */
-            background-color: rgb(18, 177, 240);
-            text-align: center; /* 텍스트를 중앙정렬 */
-            padding: 5px; /* 텍스트와 테두리 사이의 간격 */
-        }
-        /* img 요소의 스타일 지정 */
-        img{
-            width: 150px; /* 이미지 넓이 */
-            height: 150px; /* 이미지 높이 */
-            border-radius: 10%; /* 이미지 모서리를 둥글게 */
-            border: 2px solid gray; /* 이미지 테두리 설정 */
-            margin: 10px auto; /* 이미지를 가운데 정렬 */
-        }
-    </style>
-</head>
-<body>
-    <div id="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>마이페이지</title>
+        <style>
+            * {
+                margin: 20px auto;
+            }
+            /* id 속성의 이름이 container인 요소 - div*/
+            #container {
+                width: 800px;
+                /* 넓이 */
+                padding: 15px;
+                /* 내용(컨텐츠)와 테두리사이 공간 */
+                border: 1px dotted gray;
+                /* container를 감싸는 테두리 설정 */
+            }
+            p {
+                font-size: 0.9em;
+                /* 16px-1em 글자 크기 */
+                line-height: 2.0;
+                /* 줄간격 */
+            }
+            /* 쩜은 클래스 선택자 - 장점은 class속성을 같은 이름으로 여러 요소에게 지정할 수 있음.*/
+            .bluetext {
+                color: blue;
+            }
+            /* 요소 중에서 class 속성의 값이 redtext인 요소에 빨간색을 적용하겠다. */
+            .redtext {
+                color: red;
+            }
+            /* 요소 중에서 class 속성의 값이 boldtext인 요소에 글자를 두껍게 하겠다. */
+            .boldtext {
+                font-weight: bold;
+            }
+            /* 요소 중에서 class 속성의 값이 center인 요소에 텍스트를 가운데 정렬하겠다. */
+            .center {
+                text-align: center;
+            }
+            /* h2 중에서 class 속성이 bgtext 요소의 배경색을 넣고, 중앙정렬 */
+            h2.bgtext {
+                /* h2 요소 중에서 bgtext 라는 클래스 속성을 갖고 있는 요소 */
+                background-color: rgb(18, 177, 240);
+                text-align: center;
+                /* 텍스트를 중앙정렬 */
+                padding: 5px;
+                /* 텍스트와 테두리 사이의 간격 */
+            }
+            /* img 요소의 스타일 지정 */
+            img {
 
-        <h1 class="center">나의 소개</h1>
-        <div class="center">
-            <img src="https://i.namu.wiki/i/maItRVjzTE77TtQMwtgA9LGQz9hD0kjqvA5HTarh8BBuw-WsBFI71ezCnUyLqF47p9t5oBvkZgJXnWTWEPKoCNMYilAFMG4PRfeo1kmexSqQlyjlzYka2MgF8jh64cnlZEzN6V6uc681epMubtKfdw.webp" alt="프로필 사진" width="200px">
-        </div>
+                border-radius: 10%;
+                /* 이미지 모서리를 둥글게 */
+                border: 2px solid gray;
+                /* 이미지 테두리 설정 */
+                margin: 10px auto;
+                /* 이미지를 가운데 정렬 */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
 
-        <h2 class="bgtext">“세상에 긍정적인 변화를 만들고 싶은 개발자”</h2>
-        <p>저는 <span class="redtext boldtext">긍정적인 변화를 이끄는 개발자</span>가 되고자 합니다. 
-            새로운 기술을 배우고, 문제 해결에 열정을 가진 IT 전문가로서, 
-            다양한 프로젝트를 통해 성장하고 있습니다.</p>
-        <p>웹 개발 분야에서의 경험을 바탕으로 사용자에게 더 나은 경험을 제공하는 데 
-            초점을 맞추고 있으며, 프론트엔드와 백엔드 모두에서 전문성을 키워왔습니다.</p>
+            <h1 class="center">Class Programmer<br>
+                public KimYoungha();</h1>
+            <div class="center">
+                <img
+                    src="https://avatars.githubusercontent.com/u/79518297?v=4"
+                    alt="프로필 사진"
+                    width="300">
+            </div>
 
-        <h2 class="bluetext">나의 목표</h2>
-        <p>사람들에게 <span>영감</span>을 주는 프로젝트<br>
-        함께 성장하고 싶습니다.<br>
-        항상 질문할 것입니다.<br>
-        "이 프로젝트가 사람들에게 긍정적인 영향을 미칩니까?"</p>
+            <h2 class="bgtext">“멋진 변화, 더 멋진 세상을 만드는 프로그래머가 되고 싶습니다.”</h2><br>
+            <p>2024년도 세상을 움직이는 사람들은 프로그래머이다 10년여의 직장생활을 그만두고 정말 세상을 바꾸는 일을 하고 싶은 김영하입니다.
+            </p>
 
-        <h2 class="bluetext">프로젝트 경험</h2>
-        <ul>
-            <li><span>웹 애플리케이션 개발:</span> 사용자 친화적인 웹 앱 개발</li>
-            <li><span>웹 애플리케이션 개발:</span> 사용자 친화적인 웹 앱 개발</li>
-            <li><span>데이터 분석:</span> 데이터 기반의 의사결정 지원</li>
-            <li><span>프론트엔드 기술:</span> React, Angular 등의 프레임워크 활용</li>
-            <li><span>백엔드 기술:</span> Node.js, Django 등을 활용한 백엔드 구축</li>
-        </ul>
+            <p>AI와 데이타분석, 통신분야에 관심이 많습니다.
+            </p>
 
-        <h2>연락처</h2>
-        <p><span>이메일:</span> <a href="mailto:magicoh7@gmail.com">magicoh7@gmail.com</a><br>
-        <span>GitHub:</span> <a href="https://github.com/magicoh-john">github.com/magicoh-john</a><br>
-        <span>LinkedIn:</span> <a href="linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+            <p>자주 사용하는 웹&앱은 유투브, 알리, 당근입니다.</p>
 
-    </div>
+            <p>신제품 리뷰공모전에 제품리뷰로 2등상을 받은 적이 있고, 직장 업무간에 업무 프로세스 개선등을 많이 이루었습니다.</p>
 
-    <div id="container2">
+            <p>저의 이런 관심과 기질을 이용해 좋은 프로그램 개발에 힘쓰고 싶습니다.       </p>
 
-    </div>
+            <h2 class="bluetext">Skills</h2>
+            <p>
+                <ul>
+                    사용언어
+                    <li>
+                        <mark>JAVA</mark>
+                    </li>
+                    <li>HTML
+                    </li>
+                    <li>CSS
+                    </li>
+                    <li>JAVASCRIPT
+                    </li>
+                    <li>PYTHON
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <ul>
+                    애용하는 TOOLS
+                    <li>
+                        <mark>INTELLIJ</mark>
+                    </li>
+                    <li>
+                        <mark>VS CODE</mark>
+                    </li>
+                    <li>GitHub
+                    </li>
+                    <li>FileZilla
+                    </li>
+                    <li>Excel VBA
+                    </li>
 
-    <h1>또다른 제목</h1>
-</body>
-</html>
+                </ul>
+            </p>
+            <h2>추천 사이트</h2>
+            <p>
+
+                <a href="https://www.tiobe.com/tiobe-index/">티오베 인덱스(프로그램언어 순위)</a><br>
+
+                <a href="https://www.acmicpc.net/">백준 코딩테스트(코테) 사이트</a><br>
+
+            </p>
+
+            <!-- <h2 class="bluetext">프로젝트 경험</h2> <ul> <li><span>웹 애플리케이션 개발:</span> 사용자
+            친화적인 웹 앱 개발</li> <li><span>웹 애플리케이션 개발:</span> 사용자 친화적인 웹 앱 개발</li>
+            <li><span>데이터 분석:</span> 데이터 기반의 의사결정 지원</li> <li><span>프론트엔드 기술:</span> React,
+            Angular 등의 프레임워크 활용</li> <li><span>백엔드 기술:</span> Node.js, Django 등을 활용한 백엔드
+            구축</li> </ul> -->
+
+            <h2>연락처</h2>
+            <p>
+                <span>이메일:</span>
+                <a href="mailto:aceman80@naver.com">aceman80@naver.com</a><br>
+                <span>GitHub:</span>
+                <a href="https://github.com/Meegu80">github.com/Meegu80</a><br>
+                <span>홈페이지</span>
+                <a href="http://sapit.dothome.co.kr/index.html">sapit.dothome.co.kr/index.html</a>
+            </p>
+
+            <h2>지금 나는</h2>
+            <p>
+                <span>비락식혜 3개 챙겨</span>
+                <a href="https://www.youtube.com/watch?v=QW_TSknSbWM">AK47</a><br>
+
+                <span>긁혔지?긁혔네, 긁혔어!</span>
+                <a href="https://www.youtube.com/watch?v=Tj-0UwGhBs0">맨스티어 VS Ph-1</a>
+            </p>
+
+            <h2>마치며</h2>
+            <p>다시 잡은 펜과 강의실 책상, 졸업한지도 17년이 지나 다시 강의실에 앉았습니다. 하루하루 쉼없이 달리는 고단한 일정이지만, 언젠가 이
+                과정도 익숙해질 무렵, 이 과정의 막바지가 되어 있으리라 믿습니다. 2024년의 화창했던 어느 날이 좋은 추억으로 간직될 수 있기를 희망합니다.</p>
+
+        </body>
+    </html>
